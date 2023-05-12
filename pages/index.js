@@ -59,7 +59,7 @@ export default function Index() {
       </section>
 
       <section className="mt-48 md:mt-40 pb-40 relative bg-blueGray-100">
-        {/* <div
+        <div
           className="-mt-20 top-0 bottom-auto left-0 right-0 w-full absolute h-20"
           style={{ transform: "translateZ(0)" }}
         >
@@ -77,7 +77,7 @@ export default function Index() {
               points="2560 0 2560 100 0 100"
             ></polygon>
           </svg>
-        </div> */}
+        </div>
         <div className="container mx-auto">
           <div className="flex flex-wrap items-center">
             <div className="w-10/12 md:w-6/12 lg:w-4/12 px-12 md:px-4 mr-auto ml-auto -mt-32">
@@ -177,8 +177,8 @@ export default function Index() {
           </div>
         </div>
 
-        {/* <div className="container mx-auto overflow-hidden pb-20">
-          <div className="flex flex-wrap items-center">
+        <div className="container mx-auto overflow-hidden pb-20">
+          {/* <div className="flex flex-wrap items-center">
             <div className="w-full md:w-4/12 px-12 md:px-4 ml-auto mr-auto mt-48">
               <div className="text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-white">
                 <i className="fas fa-sitemap text-xl"></i>
@@ -261,7 +261,7 @@ export default function Index() {
                 />
               </div>
             </div>
-          </div>
+          </div> */}
 
           <div className="flex flex-wrap items-center pt-32">
             <div className="w-full md:w-6/12 px-4 mr-auto ml-auto mt-32">
@@ -415,9 +415,9 @@ export default function Index() {
               </a>
             </div>
           </div>
-        </div> */}
+        </div>
 
-        <div className="container mx-auto px-4 pb-32 pt-48">
+        {/* <div className="container mx-auto px-4 pb-32 pt-48">
           <div className="items-center flex flex-wrap">
             <div className="w-full md:w-5/12 ml-auto px-12 md:px-4">
               <div className="md:pr-12">
@@ -492,11 +492,11 @@ export default function Index() {
               />
             </div>
           </div>
-        </div>
+        </div> */}
 
         <div className="justify-center text-center flex flex-wrap mt-24">
           <div className="w-full md:w-6/12 px-12 md:px-4">
-            <h2 className="font-semibold text-4xl">Beautiful Example Pages</h2>
+            <h2 className="font-semibold text-4xl">Projects I worked for</h2>
             <p className="text-lg leading-relaxed mt-4 mb-4 text-blueGray-500">
               Notus NextJS is a completly new product built using our past
               experience in web templates. Take the examples we made for you and
@@ -513,14 +513,14 @@ export default function Index() {
               <div className="flex flex-wrap">
                 <div className="w-full lg:w-4/12 px-4">
                   <h5 className="text-xl font-semibold pb-4 text-center">
-                    Login Page
+                    Flotilla IOT
                   </h5>
-                  <Link href="/auth/login">
+                  <Link href="https://flotillaiot.com/">
                     <div className="hover:-mt-4 relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg ease-linear transition-all duration-150">
                       <img
                         alt="..."
                         className="align-middle border-none max-w-full h-auto rounded-lg"
-                        src="/img/login.jpg"
+                        src="/img/flotillaIOT.png"
                       />
                     </div>
                   </Link>
@@ -528,14 +528,14 @@ export default function Index() {
 
                 <div className="w-full lg:w-4/12 px-4">
                   <h5 className="text-xl font-semibold pb-4 text-center">
-                    Profile Page
+                    NTSC
                   </h5>
-                  <Link href="/profile">
+                  <Link href="https://ntsc.sa/">
                     <div className="hover:-mt-4 relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg ease-linear transition-all duration-150">
                       <img
                         alt="..."
                         className="align-middle border-none max-w-full h-auto rounded-lg"
-                        src="/img/profile.jpg"
+                        src="/img/ntsc.png"
                       />
                     </div>
                   </Link>
@@ -543,14 +543,14 @@ export default function Index() {
 
                 <div className="w-full lg:w-4/12 px-4">
                   <h5 className="text-xl font-semibold pb-4 text-center">
-                    Landing Page
+                    Tabsera
                   </h5>
-                  <Link href="/landing">
+                  <Link href="https://www.tabsera.com/">
                     <div className="hover:-mt-4 relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg ease-linear transition-all duration-150">
                       <img
                         alt="..."
                         className="align-middle border-none max-w-full h-auto rounded-lg"
-                        src="/img/landing.jpg"
+                        src="/img/tabsera.png"
                       />
                     </div>
                   </Link>
@@ -603,8 +603,8 @@ export default function Index() {
           </div>
         </div>
       </section> */}
-{/* 
-      <section className="pb-16 bg-blueGray-200 relative pt-32">
+
+      {/* <section className="pb-16 bg-blueGray-200 relative pt-32">
         <div
           className="-mt-20 top-0 bottom-auto left-0 right-0 w-full absolute h-20"
           style={{ transform: "translateZ(0)" }}
