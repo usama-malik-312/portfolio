@@ -6,7 +6,7 @@ import Footer from "components/Footers/Footer.js";
 export default function Profile() {
   return (
     <>
-      <Navbar  />
+      <Navbar />
       <main className="profile-page">
         <section className="relative block h-500-px">
           <div
@@ -50,7 +50,8 @@ export default function Profile() {
                     <div className="relative">
                       <img
                         alt="..."
-                        src="/img/team-2-800x800.jpg"
+                        src="/img/usama.jpg"
+                        style={{ height: "150px", width: "200px" }}
                         className="shadow-xl rounded-full h-auto align-middle border-none absolute -m-16 -ml-20 lg:-ml-16 max-w-150-px"
                       />
                     </div>
@@ -115,11 +116,10 @@ export default function Profile() {
                   <div className="flex flex-wrap justify-center">
                     <div className="w-full lg:w-9/12 px-4">
                       <p className="mb-4 text-lg leading-relaxed text-blueGray-700">
-                        An artist of considerable range, Jenna the name taken by
-                        Melbourne-raised, Brooklyn-based Nick Murphy writes,
-                        performs and records all of his own music, giving it a
-                        warm, intimate feel with a solid groove structure. An
-                        artist of considerable range.
+                        A hardworking and passionate job seeker with strong
+                        organizational skills eager to secure an mid-level Web
+                        Developer position. Ready to help the team achieve
+                        company goals.
                       </p>
                       {/* <a
                         href="#pablo"
