@@ -40,13 +40,21 @@ export default function Index() {
                 >
                   Contact Me
                 </a>
-                <a
+                {/* <a
                   // href="https://github.com/creativetimofficial/notus-nextjs?ref=nnjs-index"
-                  className="github-star ml-1 text-white font-bold px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-1 bg-blueGray-700 active:bg-blueGray-600 uppercase text-sm shadow hover:shadow-lg"
                   target="_blank"
                 >
                   Download Resume
-                </a>
+                </a> */}
+                <a
+                href="/pdfs/Usama_Resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="github-star ml-1 text-white font-bold px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-1 bg-blueGray-700 active:bg-blueGray-600 uppercase text-sm shadow hover:shadow-lg"
+
+              >
+                <i className="fas fa-arrow-alt-circle-down"></i>  Download Resume
+              </a>
               </div>
             </div>
           </div>

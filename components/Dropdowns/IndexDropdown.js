@@ -43,19 +43,20 @@ const IndexDropdown = () => {
         >
           Prossional Data
         </span>
-        <Link
-        //  href="/admin/dashboard"
-         href="/"
+        {/* <Link
+         href="/pdfs/Usama_Resume.pdf"
+        //  href="/"
          >
           <a
-            href="#pablo"
+            // href="/pdfs/Usama_Resume.pdf"
+            target="_blank" rel="noopener noreferrer" 
             className={
               "text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-blueGray-700"
             }
           >
             Resume
           </a>
-        </Link>
+        </Link> */}
         <Link
         //  href="/admin/settings"
          href="/"
