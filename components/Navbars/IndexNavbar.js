@@ -16,7 +16,7 @@ export default function Navbar(props) {
                 className="text-blueGray-700 text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase"
                 href="#pablo"
               >
-                Portfolio
+                BT_folio
               </a>
             </Link>
             <button
@@ -69,14 +69,14 @@ export default function Navbar(props) {
               <li className="flex items-center">
                 <IndexDropdown />
               </li>
-              <li className="flex items-center">
+              {/* <li className="flex items-center">
                <a
                   className="hover:text-blueGray-500 text-blueGray-700 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
                   href="/profile"
                 >
                  Blogs
                 </a>
-              </li> 
+              </li>  */}
               <li className="flex items-center">
                 <a
                   className="hover:text-blueGray-500 text-blueGray-700 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"

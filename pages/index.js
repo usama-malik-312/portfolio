@@ -283,10 +283,11 @@ export default function Index() {
                       <img
                         alt="..."
                         className="shadow-md rounded-full max-w-full w-16 mx-auto p-2 bg-white"
-                        src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/svelte.jpg"
+                        // src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/svelte.jpg"
+                        src="/img/html.png"
                       />
                       <p className="text-lg text-white mt-4 font-semibold">
-                        Svelte
+                        HTML
                       </p>
                     </div>
                   </a>
@@ -322,6 +323,7 @@ export default function Index() {
                   </a>
                 </div>
                 <div className="my-4 w-full lg:w-6/12 px-4 lg:mt-16">
+                   
                   <a
                     href="https://www.creative-tim.com/learning-lab/tailwind/js/alerts/notus?ref=vtw-index"
                     target="_blank"
@@ -330,10 +332,12 @@ export default function Index() {
                       <img
                         alt="..."
                         className="shadow-md rounded-full max-w-full w-16 mx-auto p-2 bg-white"
-                        src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/js.png"
+                        // src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/js.png"
+                        src="/img/css.jfif"
+
                       />
                       <p className="text-lg text-white mt-4 font-semibold">
-                        JavaScript
+                         CSS
                       </p>
                     </div>
                   </a>
@@ -345,10 +349,12 @@ export default function Index() {
                       <img
                         alt="..."
                         className="shadow-md rounded-full max-w-full w-16 mx-auto p-2 bg-white"
-                        src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/angular.jpg"
+                        // src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/angular.jpg"
+                        src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/js.png"
+
                       />
                       <p className="text-lg text-white mt-4 font-semibold">
-                        Angular
+                      JavaScript
                       </p>
                     </div>
                   </a>
@@ -360,10 +366,10 @@ export default function Index() {
                       <img
                         alt="..."
                         className="shadow-md rounded-full max-w-full w-16 mx-auto p-2 bg-white"
-                        src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/vue.jpg"
+                        src="/img/node.png"
                       />
                       <p className="text-lg text-white mt-4 font-semibold">
-                        Vue.js
+                        Node.js
                       </p>
                     </div>
                   </a>
@@ -413,14 +419,14 @@ export default function Index() {
                   Tooltips
                 </span>
               </div>
-              <a
+              {/* <a
                 href="https://www.creative-tim.com/learning-lab/tailwind/nextjs/alerts/notus?ref=nnjs-index"
                 target="_blank"
                 className="font-bold text-blueGray-700 hover:text-blueGray-500 ease-linear transition-all duration-150"
               >
                 View all{" "}
                 <i className="fa fa-angle-double-right ml-1 leading-relaxed"></i>
-              </a>
+              </a> */}
             </div>
           </div>
         </div>
