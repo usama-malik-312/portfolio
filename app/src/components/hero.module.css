@@ -6,19 +6,21 @@
   /* background-color: #f5f5f5; */
   min-height: 500px;
 }
-.name{
+
+.name {
   font-size: 52px;
-  font-weight: 800px;
+  font-weight: 800;
   color: #111827;
   /* font-family: "Poppins",sans-serif; */
 }
-.description{
+
+.description {
   font-size: 22px;
-  font-weight: 800px;
+  font-weight: 800;
   color: #737C8C;
   /* font-family: "Poppins",sans-serif; */
-
 }
+
 .intro {
   flex: 1;
   padding: 20px;
@@ -54,43 +56,45 @@
 
 .buttons {
   margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.buttonAbout, .buttonResume {
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 800;
+  width: 150px;
+  height: 45px;
 }
 
 .buttonAbout {
-  border: 3px solid #DADADA; 
-  border-radius: 3px;
-  cursor: pointer;
-  width: 168px;
-  height: 55px;
+  border: 3px solid #DADADA;
   color: #3F4655;
-  font-size: 20;
-  font-weight: 800;
   background-color: #fff;
   box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.5);
 }
+
 .buttonResume {
-  border-radius: 3px;
-  cursor: pointer;
-  border: 3px solid #0C84E4; 
-  margin-left: 20px;
-  /* width: 168px; */
-  height: 55px;
+  border: 3px solid #0C84E4;
   color: #fff;
-  font-size: 20;
-  font-weight: 800;
   background-color: #0C84E4;
 }
-.buttonResume:hover {
-  transform: scale(1.05); /* Zoom in by 5% */
-  font-weight: 1000; /* Increase font weight */
-  background-color: #0b6ebe;
-  border: 3px solid #0b6ebe; 
-}
+
 .buttonAbout:hover {
   transform: scale(1.05); /* Zoom in by 5% */
   font-weight: 1000; /* Increase font weight */
   color: black;
-  background-color: #DADADA ;
+  background-color: #DADADA;
+}
+
+.buttonResume:hover {
+  transform: scale(1.05); /* Zoom in by 5% */
+  font-weight: 1000; /* Increase font weight */
+  background-color: #0b6ebe;
+  border: 3px solid #0b6ebe;
 }
 
 @media (max-width: 768px) {
@@ -103,11 +107,10 @@
   }
 
   .buttons {
-    display: flex;
-    flex-direction: column;
+    justify-content: center;
   }
 
-  .button {
+  .buttonAbout, .buttonResume {
     width: 100%;
     margin: 5px 0;
   }

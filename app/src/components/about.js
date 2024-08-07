@@ -4,12 +4,12 @@ import styles from './about.module.css'; // Import the CSS module for styling
 import Heading from '../common/heading';
 
 const experience = [
-   {
+  {
     name: 'Enroutech Technologies', 
     date: 'Nov 2022 - Present',
     role: 'FrontEnd Developer',
     city: "Rawalpindi"
-   },
+  },
   { 
     name: 'Smart Fusion', 
     date: 'May 2022 - Oct 2022', 
@@ -21,7 +21,7 @@ const experience = [
     date: 'April 2021 - July 2021',
     role: 'Intern Full Stack',
     city: "Islamabad"
-   },
+  },
 ];
 
 const education = [
@@ -52,11 +52,6 @@ export default function About() {
               height={330}
               className={styles.aboutImg}
             />
-            {/* <img src="/usamaAbout.JPG" 
-            alt="About Image"
-            className={styles.aboutImg}
-
-             ></img> */}
           </div>
         </div>
         <div className={styles.description}>
@@ -73,11 +68,11 @@ export default function About() {
                 <li key={index} className={styles.expSection}>
                   <div className={styles.expDiv}>
                     <div>{item.name}</div>  
-                     <div>{item.date}</div>
+                    <div>{item.date}</div>
                   </div>
                   <div className={styles.expDiv}>
                     <div>{item.role}</div>
-                     <div>{item.city}</div>
+                    <div>{item.city}</div>
                   </div>
                 </li>
               ))}
@@ -90,7 +85,7 @@ export default function About() {
                 <li key={index} className={styles.expSection}>
                   <div className={styles.expDiv}>
                     <div><strong>{item.degree}</strong> - {item.university} </div>  
-                     <div>{item.date}</div>
+                    <div>{item.date}</div>
                   </div>
                 </li>
               ))}

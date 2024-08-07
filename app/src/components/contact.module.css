@@ -16,7 +16,8 @@
 }
 
 .cardContainer {
-  display: grid;
+  display:  flex;
+  flex-flow: wrap;
   gap: 20px;
   padding: 20px;
   justify-content: center;
@@ -37,6 +38,8 @@
 .contactFormDiv{
   /* margin-top: 20px; */
   display: flex;
+  /* display:  flex; */
+  flex-flow: wrap;
   flex-direction: column;
   align-items: center;
   background-color: #111827;

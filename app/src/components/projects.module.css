@@ -23,7 +23,8 @@
   }
   
   .cardContainer {
-    display: grid;
+    display:  flex;
+    flex-flow: wrap;
     gap: 20px;
     padding: 20px 20px 50px 20px;
     justify-content: center;

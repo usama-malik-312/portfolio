@@ -76,18 +76,12 @@ export default function Projects() {
             <img decoding="async" style={{marginLeft:"5px"}} alt="HTML5" src="https://raulwebdev.com//wp-content/uploads/2024/03/HTML5.svg" height="20" width="auto"/>
             <img decoding="async" style={{marginLeft:"5px"}} alt="CSS3" src="https://raulwebdev.com//wp-content/uploads/2024/03/CSS3.svg" height="20" width="auto"/>
             <img decoding="async" style={{marginLeft:"5px"}} alt="JavaScript" src="https://raulwebdev.com//wp-content/uploads/2024/03/JavaScript.svg" height="20" width="auto"/>
-            {/* <img decoding="async" style={{marginLeft:"5px"}} alt="TypeScript" src="https://raulwebdev.com//wp-content/uploads/2024/03/TypeScript.svg" height="20" width="auto"/> */}
             <img decoding="async" style={{marginLeft:"5px"}} alt="React" src="https://raulwebdev.com//wp-content/uploads/2024/03/React.svg" height="20" width="auto"/>
             <img decoding="async" style={{marginLeft:"5px"}} alt="Redux" src="https://raulwebdev.com//wp-content/uploads/2024/03/Redux.svg" height="20" width="auto"/>
-            {/* <img decoding="async" style={{marginLeft:"5px"}} alt="Next.js" src="https://raulwebdev.com//wp-content/uploads/2024/03/Next.js.svg" height="20" width="auto"/> */}
-            {/* <img decoding="async" style={{marginLeft:"5px"}} alt="Tailwind CSS" src="https://raulwebdev.com//wp-content/uploads/2024/03/Tailwind20CSS.svg" height="20" width="auto"/> */}
             <img decoding="async" style={{marginLeft:"5px"}} alt="Bootstrap" src="https://raulwebdev.com//wp-content/uploads/2024/03/Bootstrap.svg" height="20" width="auto"/>
-            {/* <img decoding="async" style={{marginLeft:"5px"}} alt="jQuery" src="https://raulwebdev.com//wp-content/uploads/2024/03/jQuery-1.svg" height="20" width="auto"/> */}
             <img decoding="async" style={{marginLeft:"5px"}} alt="Material Design" src="https://raulwebdev.com//wp-content/uploads/2024/03/Material20Design-1.svg" height="20" width="auto"/>
             <img decoding="async" style={{marginLeft:"5px"}} alt="Node.js"src="https://raulwebdev.com/wp-content/uploads/2024/03/Node.js.svg" height="20" width="auto"/>
             <img decoding="async" style={{marginLeft:"5px"}} alt="MySQL"src="https://raulwebdev.com/wp-content/uploads/2024/03/MySQL.svg" height="20" width="auto"/>
-           
-            {/* <img decoding="async" style={{marginLeft:"5px"}} alt="Elementor" src="https://raulwebdev.com//wp-content/uploads/2024/03/Elementor.svg" height="20" width="auto"/> */}
             </div>}
      />
 
@@ -101,13 +95,9 @@ export default function Projects() {
             <img decoding="async" style={{marginLeft:"5px"}} alt="HTML5" src="https://raulwebdev.com//wp-content/uploads/2024/03/HTML5.svg" height="20" width="auto"/>
             <img decoding="async" style={{marginLeft:"5px"}} alt="CSS3" src="https://raulwebdev.com//wp-content/uploads/2024/03/CSS3.svg" height="20" width="auto"/>
             <img decoding="async" style={{marginLeft:"5px"}} alt="JavaScript" src="https://raulwebdev.com//wp-content/uploads/2024/03/JavaScript.svg" height="20" width="auto"/>
-            {/* <img decoding="async" style={{marginLeft:"5px"}} alt="TypeScript" src="https://raulwebdev.com//wp-content/uploads/2024/03/TypeScript.svg" height="20" width="auto"/> */}
             <img decoding="async" style={{marginLeft:"5px"}} alt="React" src="https://raulwebdev.com//wp-content/uploads/2024/03/React.svg" height="20" width="auto"/>
             <img decoding="async" style={{marginLeft:"5px"}} alt="Redux" src="https://raulwebdev.com//wp-content/uploads/2024/03/Redux.svg" height="20" width="auto"/>
-            {/* <img decoding="async" style={{marginLeft:"5px"}} alt="Next.js" src="https://raulwebdev.com//wp-content/uploads/2024/03/Next.js.svg" height="20" width="auto"/> */}
-            {/* <img decoding="async" style={{marginLeft:"5px"}} alt="Tailwind CSS" src="https://raulwebdev.com//wp-content/uploads/2024/03/Tailwind20CSS.svg" height="20" width="auto"/> */}
             <img decoding="async" style={{marginLeft:"5px"}} alt="Bootstrap" src="https://raulwebdev.com//wp-content/uploads/2024/03/Bootstrap.svg" height="20" width="auto"/>
-            {/* <img decoding="async" style={{marginLeft:"5px"}} alt="jQuery" src="https://raulwebdev.com//wp-content/uploads/2024/03/jQuery-1.svg" height="20" width="auto"/> */}
             <img decoding="async" style={{marginLeft:"5px"}} alt="Material Design" src="https://raulwebdev.com//wp-content/uploads/2024/03/Material20Design-1.svg" height="20" width="auto"/>
             <img decoding="async" style={{marginLeft:"5px"}} alt="Node.js"src="https://raulwebdev.com/wp-content/uploads/2024/03/Node.js.svg" height="20" width="auto"/>
             <img decoding="async" style={{marginLeft:"5px"}} alt="MySQL"src="https://raulwebdev.com/wp-content/uploads/2024/03/MySQL.svg" height="20" width="auto"/>
@@ -124,20 +114,14 @@ export default function Projects() {
              <img decoding="async" style={{marginLeft:"5px"}} alt="HTML5" src="https://raulwebdev.com//wp-content/uploads/2024/03/HTML5.svg" height="20" width="auto"/>
             <img decoding="async" style={{marginLeft:"5px"}} alt="CSS3" src="https://raulwebdev.com//wp-content/uploads/2024/03/CSS3.svg" height="20" width="auto"/>
             <img decoding="async" style={{marginLeft:"5px"}} alt="JavaScript" src="https://raulwebdev.com//wp-content/uploads/2024/03/JavaScript.svg" height="20" width="auto"/>
-            {/* <img decoding="async" style={{marginLeft:"5px"}} alt="TypeScript" src="https://raulwebdev.com//wp-content/uploads/2024/03/TypeScript.svg" height="20" width="auto"/> */}
             <img decoding="async" style={{marginLeft:"5px"}} alt="React" src="https://raulwebdev.com//wp-content/uploads/2024/03/React.svg" height="20" width="auto"/>
             <img decoding="async" style={{marginLeft:"5px"}} alt="Redux" src="https://raulwebdev.com//wp-content/uploads/2024/03/Redux.svg" height="20" width="auto"/>
-            {/* <img decoding="async" style={{marginLeft:"5px"}} alt="Next.js" src="https://raulwebdev.com//wp-content/uploads/2024/03/Next.js.svg" height="20" width="auto"/> */}
-            {/* <img decoding="async" style={{marginLeft:"5px"}} alt="Tailwind CSS" src="https://raulwebdev.com//wp-content/uploads/2024/03/Tailwind20CSS.svg" height="20" width="auto"/> */}
             <img decoding="async" style={{marginLeft:"5px"}} alt="Bootstrap" src="https://raulwebdev.com//wp-content/uploads/2024/03/Bootstrap.svg" height="20" width="auto"/>
-            {/* <img decoding="async" style={{marginLeft:"5px"}} alt="jQuery" src="https://raulwebdev.com//wp-content/uploads/2024/03/jQuery-1.svg" height="20" width="auto"/> */}
             <img decoding="async" style={{marginLeft:"5px"}} alt="Material Design" src="https://raulwebdev.com//wp-content/uploads/2024/03/Material20Design-1.svg" height="20" width="auto"/>
             <img decoding="async" style={{marginLeft:"5px"}} alt="Node.js"src="https://raulwebdev.com/wp-content/uploads/2024/03/Node.js.svg" height="20" width="auto"/>
             <img decoding="async" style={{marginLeft:"5px"}} alt="MySQL"src="https://raulwebdev.com/wp-content/uploads/2024/03/MySQL.svg" height="20" width="auto"/>
             </div>}
      />
-
-
     </div>
 
     <div className={styles.projectSubMain}>
