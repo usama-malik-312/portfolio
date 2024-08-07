@@ -1,0 +1,83 @@
+.aboutMain {
+    position: relative;
+    background-color: #111827;
+    color: #fce8e8; /* Ensure text is visible against the dark background */
+    padding-top: 40px; /* Add padding to accommodate the height of the texture */
+  }
+  
+  .aboutMain::before,
+  .aboutMain::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px; /* Adjust the height as needed */
+    background: linear-gradient(to bottom, #6b7280 0%, transparent 100%);
+    clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
+  }
+  
+  .aboutMain::after {
+    background: linear-gradient(to bottom, #d1d5db 0%, transparent 100%);
+    opacity: 0.5;
+  }
+  
+  .about {
+    display: flex;
+    flex-wrap: wrap;
+    /* min-height: 644px; */
+    font-weight: 400;
+    font-size: 18px;
+    padding: 0 20px;
+    background-color: #111827;
+    color: #fff; /* Ensure text is visible against the dark background */
+  }
+  
+  .expSection {
+    margin: 10px 0 0 3px;
+  }
+  
+  .description {
+    flex: 1;
+    color: #F4F5F7;
+    padding: 20px;
+  }
+  
+  .imageContainer {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  
+  .imagediv {
+    position: relative;
+    width: 500px;
+    height: 330px;
+  } 
+  
+  .aboutImg {
+    border-radius: 8px;
+    width: 550px !important;
+    height: 330px !important;
+    object-fit: cover; /* Ensure image covers the specified dimensions */
+  }
+  
+  .expDiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  @media (max-width: 768px) {
+    .about {
+      flex-direction: column;
+    }
+  
+    .description,
+    .imageContainer {
+      padding: 10px;
+    }
+  }
+  

@@ -1,0 +1,68 @@
+.projectsMain {
+    position: relative;
+    background-color: #111827;
+    color: #fce8e8; /* Ensure text is visible against the dark background */
+    padding-top: 40px; /* Add padding to accommodate the height of the texture */
+  }
+  
+  .projectsMain::before,
+  .projectsMain::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px; /* Adjust the height as needed */
+    background: linear-gradient(to bottom, #6b7280 0%, transparent 100%);
+    clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
+  }
+  
+  .projectsMain::after {
+    background: linear-gradient(to bottom, #d1d5db 0%, transparent 100%);
+    opacity: 0.5;
+  }
+  
+  .cardContainer {
+    display: grid;
+    gap: 20px;
+    padding: 20px 20px 50px 20px;
+    justify-content: center;
+    grid-template-columns: repeat(3, 1fr); /* Three columns for larger screens */
+  }
+
+
+  .projectSubMain{
+    /* flex-direction: column; */
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    background-color: #6b7280;
+    padding: 45px;
+    }
+   .projectSubHead{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 42px;
+    font-weight: 800px;
+    margin: 0;
+   }
+   .projectSubContent{
+    font-size: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+   }
+  
+  @media (max-width: 1024px) {
+    .cardContainer {
+      grid-template-columns: repeat(2, 1fr); /* Two columns for medium screens */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .cardContainer {
+      grid-template-columns: 1fr; /* Single column for smaller screens */
+    }
+  }
