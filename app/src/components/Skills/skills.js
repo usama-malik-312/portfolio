@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './skills.module.css'; // Import the CSS module for styling
-import MediaCard from '../common/skillscard'; // Assuming MediaCard is in the same directory
-import Heading from '../common/heading';
+import MediaCard from '../../common/SkillCard/skillscard'; // Assuming MediaCard is in the same directory
+import Heading from '../../common/Heading/heading';
 
 export default function Skills() {
   return (

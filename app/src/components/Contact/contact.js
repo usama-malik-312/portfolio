@@ -3,8 +3,9 @@ import { useState } from 'react';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 import styles from './contact.module.css'; // Import the CSS module for styling
-import ContactCard from '../common/contactCard';
-import Heading from '../common/heading';
+// import Heading from '../../common/Heading/heading';
+import ContactCard from '../../common/ContactCard/contactCard';
+import Heading from '../../common/Heading/heading';
 
 export default function Contact() {
   const [formData, setFormData] = useState({

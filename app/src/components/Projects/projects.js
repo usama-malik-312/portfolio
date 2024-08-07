@@ -1,8 +1,8 @@
 
 import * as React from 'react';
 import styles from './projects.module.css'; // Import the CSS module for styling
-import MediaCard from '../common/projectcards';
-import Heading from '../common/heading';
+import MediaCard from '../../common/ProjectCard/projectcards';
+import Heading from '../../common/Heading/heading';
 
 export default function Projects() {
   return (

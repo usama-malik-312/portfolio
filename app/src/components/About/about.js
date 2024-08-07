@@ -1,7 +1,7 @@
 import * as React from 'react';
 import Image from 'next/image'; // Assuming you're using Next.js's Image component for optimization
 import styles from './about.module.css'; // Import the CSS module for styling
-import Heading from '../common/heading';
+import Heading from '../../common/Heading/heading';
 
 const experience = [
   {

@@ -1,19 +1,17 @@
 "use client";
 
 // import styles from '../styles/page.module.css';
-import ButtonAppBar from './src/common/header';
-import Hero from './src/components/hero';
-import About from './src/components/about';
-import Skills from './src/components/skills';
-import Certificates from './src/components/certificates';
-import Projects from './src/components/projects';
-import Contact from './src/components/contact';
-import Footer from './src/common/footer';
-import { Grid } from '@mui/material';
-import Container from '@mui/material/Container';
+
 import Fab from '@mui/material/Fab';
 import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
 import { useEffect, useState } from 'react';
+import ButtonAppBar from './src/common/Header/header';
+import Hero from './src/components/Hero/hero';
+import About from './src/components/About/about';
+import Skills from './src/components/Skills/skills';
+import Projects from './src/components/Projects/projects';
+import Contact from './src/components/Contact/contact';
+import Footer from './src/common/Footer/footer';
 
 export default function AppFile() {
   const [showButton, setShowButton] = useState(false);
