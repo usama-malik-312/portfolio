@@ -15,7 +15,10 @@ export default function Hero() {
           <ScrollLink to="about" smooth={true} duration={500} offset={-70}>
             <Button className={styles.buttonAbout}>About Me</Button>
           </ScrollLink>
-          <Button startIcon={<DownloadIcon />} className={styles.buttonResume}>Resume</Button>
+          <Button startIcon={<DownloadIcon />}
+          href="/Usama Bin Tahir.pdf" 
+           download="Usama_Bin_Tahir_Resume.pdf"
+           className={styles.buttonResume}>Resume</Button>
         </div>
       </div>
       <div className={styles.imageContainer}>
