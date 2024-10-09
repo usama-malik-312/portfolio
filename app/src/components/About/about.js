@@ -2,6 +2,7 @@ import * as React from 'react';
 import Image from 'next/image'; // Assuming you're using Next.js's Image component for optimization
 import styles from './about.module.css'; // Import the CSS module for styling
 import Heading from '../../common/Heading/heading';
+import { Container } from '@mui/material';
 
 const experience = [
   {
@@ -40,6 +41,8 @@ const education = [
 export default function About() {
   return (
     <div className={styles.aboutMain}>
+    <Container maxWidth="lg" >
+
       <Heading text={"About Me"} color={"#fff"}></Heading>
       <div className={styles.about}>
         <div className={styles.imageContainer}>
@@ -93,6 +96,8 @@ export default function About() {
           </div>
         </div>
       </div>
+    </Container>
+
     </div>
   );
 }

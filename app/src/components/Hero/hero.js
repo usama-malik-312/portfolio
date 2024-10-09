@@ -4,9 +4,12 @@ import styles from './hero.module.css'; // Import the CSS module for styling
 import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll';
 import Button from '@mui/material/Button';
 import DownloadIcon from '@mui/icons-material/Download';
+import { Container } from '@mui/material';
 
 export default function Hero() {
   return (
+    <Container maxWidth="lg" style={{marginTop:"59px"}}>
+
     <section className={styles.hero}>
       <div className={styles.intro}>
         <h1 className={styles.name}>Hi, I'm Usama!</h1>
@@ -34,5 +37,7 @@ export default function Hero() {
         </div>
       </div>
     </section>
+    </Container>
+
   );
 }

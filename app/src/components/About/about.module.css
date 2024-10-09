@@ -3,6 +3,8 @@
   background-color: #111827;
   color: #fce8e8; /* Ensure text is visible against the dark background */
   padding-top: 40px; /* Add padding to accommodate the height of the texture */
+  width: 100%;
+  height: 630px;
   
 }
 
@@ -25,11 +27,13 @@
 
 .about {
   display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
   /* flex-wrap: wrap; */
   /* display:  flex; */
   flex-flow: wrap;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 13px;
   padding: 0 20px;
   background-color: #111827;
   color: #fff; /* Ensure text is visible against the dark background */
@@ -40,16 +44,19 @@
 }
 
 .description {
-  flex: 1;
+  /* flex: 1; */
   color: #F4F5F7;
-  padding: 20px;
+  /* padding: 20px; */
+  max-width: 48%;
 }
 
 .imageContainer {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  padding: 20px;
+  /* flex: 1; */
+  /* display: flex; */
+  /* justify-content: center; */
+  /* padding: 10px; */
+  max-width: 48%;
+
 }
 
 .imagediv {

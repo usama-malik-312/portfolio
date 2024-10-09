@@ -3,10 +3,13 @@ import * as React from 'react';
 import styles from './projects.module.css'; // Import the CSS module for styling
 import MediaCard from '../../common/ProjectCard/projectcards';
 import Heading from '../../common/Heading/heading';
+import { Container } from '@mui/material';
 
 export default function Projects() {
   return (
     <div className={styles.projectsMain}>
+      <Container maxWidth="lg" >
+
       <Heading text={"Projects"} color={"#fff"}></Heading>
       <div className={styles.cardContainer}>
       <MediaCard
@@ -124,9 +127,15 @@ export default function Projects() {
      />
     </div>
 
+   
+    </Container>
     <div className={styles.projectSubMain}>
+    <Container maxWidth="lg" >
+
       <h3 className={styles.projectSubHead}>Elevate Your Web Present</h3>
       <p className={styles.projectSubContent}>Unlock the Power of Web Development to Stand Out Online</p>
+    </Container>
+
     </div>
     </div>
   );

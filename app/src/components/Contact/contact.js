@@ -6,6 +6,7 @@ import styles from './contact.module.css'; // Import the CSS module for styling
 // import Heading from '../../common/Heading/heading';
 import ContactCard from '../../common/ContactCard/contactCard';
 import Heading from '../../common/Heading/heading';
+import { Container } from '@mui/material';
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -30,7 +31,10 @@ export default function Contact() {
   };
 
   return (
+
     <div className={styles.skills}>
+     <Container maxWidth="lg" >
+
     <Heading text={"Contact Me"} color={"#000"} />
 
     <div className={styles.cardContainer}>
@@ -55,10 +59,14 @@ export default function Contact() {
         content="Direct Message me"
       />
     </div>
+    </Container>
 
     {/* Contact Form */}
     <div className={styles.contactFormDiv}>
+     {/* <Container maxWidth="lg" > */}
+
     <form className={styles.contactForm} onSubmit={handleSubmit}>
+    <Container maxWidth="lg" >
       <Heading text={"Send Me a Message"} color={"#fff"} />
 
       <div className={styles.formRow}>
@@ -138,9 +146,12 @@ export default function Contact() {
       >
         Submit
       </Button>
+    </Container>
+
     </form>
+    {/* </Container> */}
+
   </div>
   </div>
-  
   );
 }

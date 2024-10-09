@@ -2,9 +2,11 @@ import React from 'react';
 import styles from './skills.module.css'; // Import the CSS module for styling
 import MediaCard from '../../common/SkillCard/skillscard'; // Assuming MediaCard is in the same directory
 import Heading from '../../common/Heading/heading';
+import { Container } from '@mui/material';
 
 export default function Skills() {
   return (
+    <Container maxWidth="lg" >
     <div className={styles.skills}>
       {/* <h2 className={styles.heading}>My Skills</h2> */}
       <Heading text={"My Skills"} color={"#fff"}></Heading>
@@ -70,5 +72,6 @@ export default function Skills() {
         />
       </div>
     </div>
+    </Container>
   );
 }
