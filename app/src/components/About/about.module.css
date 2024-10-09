@@ -1,11 +1,10 @@
 .aboutMain {
   position: relative;
   background-color: #111827;
-  color: #fce8e8; /* Ensure text is visible against the dark background */
-  padding-top: 40px; /* Add padding to accommodate the height of the texture */
+  color: #fce8e8;
+  padding-top: 40px;
   width: 100%;
-  height: 630px;
-  
+  height: auto; /* Allow the height to adjust automatically */
 }
 
 .aboutMain::before,
@@ -15,7 +14,7 @@
   top: 0;
   left: 0;
   right: 0;
-  height: 60px; /* Adjust the height as needed */
+  height: 60px;
   background: linear-gradient(to bottom, #6b7280 0%, transparent 100%);
   clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
 }
@@ -28,48 +27,39 @@
 .about {
   display: flex;
   justify-content: space-between;
-  /* align-items: center; */
-  /* flex-wrap: wrap; */
-  /* display:  flex; */
-  flex-flow: wrap;
+  flex-wrap: wrap;
   font-weight: 400;
-  font-size: 13px;
+  font-size: 14px;
   padding: 0 20px;
   background-color: #111827;
-  color: #fff; /* Ensure text is visible against the dark background */
+  color: #fff;
 }
 
 .expSection {
-  margin: 10px 0 0 3px;
+  margin: 10px 0;
 }
 
 .description {
-  /* flex: 1; */
-  color: #F4F5F7;
-  /* padding: 20px; */
   max-width: 48%;
+  color: #F4F5F7;
+  font-size: 14px;
 }
 
 .imageContainer {
-  /* flex: 1; */
-  /* display: flex; */
-  /* justify-content: center; */
-  /* padding: 10px; */
   max-width: 48%;
-
 }
 
 .imagediv {
   position: relative;
-  width: 500px;
-  height: 330px;
+  width: 100%;
+  height: auto;
 }
 
 .aboutImg {
   border-radius: 8px;
-  width: 550px !important;
-  height: 330px !important;
-  object-fit: cover; /* Ensure image covers the specified dimensions */
+  object-fit: cover;
+  width: 100% !important;
+  height: auto !important;
 }
 
 .expDiv {
@@ -78,41 +68,35 @@
   align-items: center;
 }
 
+.section h3 {
+  margin-top: 20px;
+  color: #fce8e8;
+}
+
 @media (max-width: 768px) {
   .about {
     flex-direction: column;
+    text-align: center;
   }
 
-  .description,
-  .imageContainer {
-    padding: 10px;
+  .description, .imageContainer {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .expDiv {
+    justify-content: space-between;
   }
 
   .imagediv {
     width: 100%;
-    height: auto;
-  }
-
-  .aboutImg {
-    width: 100% !important;
-    height: auto !important;
   }
 }
 
 @media (max-width: 480px) {
-  .description,
-  .imageContainer {
+  .description, .imageContainer {
     padding: 10px;
-  }
-
-  .imagediv {
-    width: 100%;
-    height: auto;
-  }
-
-  .aboutImg {
-    width: 100% !important;
-    height: auto !important;
+    max-width: 100%;
   }
 
   .expDiv {
