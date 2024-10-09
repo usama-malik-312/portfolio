@@ -2,11 +2,19 @@ import * as React from "react";
 import { useState } from "react";
 import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
+import Snackbar from "@mui/material/Snackbar"; // Import Snackbar
+import MuiAlert from "@mui/material/Alert"; // Import Alert for Snackbar
 import styles from "./contact.module.css"; // Import the CSS module for styling
-// import Heading from '../../common/Heading/heading';
 import ContactCard from "../../common/ContactCard/contactCard";
 import Heading from "../../common/Heading/heading";
 import { Container } from "@mui/material";
+import emailjs from "emailjs-com"; // Import EmailJS
+
+const Alert = React.forwardRef(function Alert(props, ref) {
+  return <MuiAlert elevation={6} ref={ref} variant="filled" {...props} />;
+});
+
+
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -24,11 +32,54 @@ export default function Contact() {
     });
   };
 
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+  //   // Handle form submission logic here
+  //   console.log("Form data submitted:", formData);
+  // };
+
+
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+  
+  //   const { firstName, lastName, email, message } = formData;
+  
+  //   const whatsappMessage = `Hello, I'm ${firstName} ${lastName}.\n\nEmail: ${email}\n\nMessage: ${message}`;
+    
+  //   const whatsappLink = `https://wa.me/923405254664?text=${encodeURIComponent(whatsappMessage)}`;
+  
+  //   // Open WhatsApp with the pre-filled message
+  //   window.open(whatsappLink, "_blank");
+  // };
+
+  const [snackbarOpen, setSnackbarOpen] = useState(false); // Snackbar open state
+  const [snackbarMessage, setSnackbarMessage] = useState(""); // Snackbar message
+  const [snackbarSeverity, setSnackbarSeverity] = useState("success"); // Snackbar severity
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle form submission logic here
-    console.log("Form data submitted:", formData);
+
+    emailjs.sendForm('service_tdb56sl', 'template_chchivs', e.target, '1PqmWfWlxZxVOAS-z')
+      .then((result) => {
+          console.log('Email sent successfully:', result.text);
+          setSnackbarMessage("Email sent successfully!");
+          setSnackbarSeverity("success");
+          setSnackbarOpen(true);
+      }, (error) => {
+          console.log('Failed to send email:', error.text);
+          setSnackbarMessage("Failed to send email. Please try again.");
+          setSnackbarSeverity("error");
+          setSnackbarOpen(true);
+      });
   };
+
+  const handleSnackbarClose = (event, reason) => {
+    if (reason === "clickaway") {
+      return;
+    }
+    setSnackbarOpen(false);
+  };
+
 
   const handleGmailClick = () => {
     window.location.href = "mailto:usamabintahir312@gmail.com";
@@ -168,6 +219,16 @@ export default function Contact() {
         </form>
         {/* </Container> */}
       </div>
+      <Snackbar
+        open={snackbarOpen}
+        autoHideDuration={6000}
+        onClose={handleSnackbarClose}
+        anchorOrigin={{ vertical: 'top', horizontal: 'center' }}
+      >
+        <Alert onClose={handleSnackbarClose} severity={snackbarSeverity}>
+          {snackbarMessage}
+        </Alert>
+      </Snackbar>
     </div>
   );
 }
