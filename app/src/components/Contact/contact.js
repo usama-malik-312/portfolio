@@ -32,46 +32,66 @@ export default function Contact() {
     });
   };
 
-  // const handleSubmit = (e) => {
-  //   e.preventDefault();
-  //   // Handle form submission logic here
-  //   console.log("Form data submitted:", formData);
-  // };
 
-
-  // const handleSubmit = (e) => {
-  //   e.preventDefault();
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // Create an object to send all data
+    const templateParams = {
+      from_name: formData.firstName,
+      from_last_name: formData.lastName,
+      from_email: formData.email,
+      message: formData.message,
+    };
   
-  //   const { firstName, lastName, email, message } = formData;
-  
-  //   const whatsappMessage = `Hello, I'm ${firstName} ${lastName}.\n\nEmail: ${email}\n\nMessage: ${message}`;
+    console.log("templateParams=====",templateParams);
     
-  //   const whatsappLink = `https://wa.me/923405254664?text=${encodeURIComponent(whatsappMessage)}`;
-  
-  //   // Open WhatsApp with the pre-filled message
-  //   window.open(whatsappLink, "_blank");
-  // };
+
+    emailjs
+  .send(
+    "service_tdb56sl", // Your service ID
+    "template_chchivs", // Your template ID
+    templateParams, // Data to be sent
+    "1PqmWfWlxZxVOAS-z" // Your public key
+  )
+  .then(
+    (result) => {
+      // console.log("Email sent successfully:", result.text);
+      // console.log("Data sent:", templateParams); // Log the data being sent
+      setSnackbarMessage("Email sent successfully!");
+      setSnackbarSeverity("success");
+      setSnackbarOpen(true);
+    },
+    (error) => {
+      // console.log("Failed to send email:", error.text);
+      // console.log("Data sent:", templateParams); // Log the data being sent
+      setSnackbarMessage("Failed to send email. Please try again.");
+      setSnackbarSeverity("error");
+      setSnackbarOpen(true);
+    }
+  );
+
+  };
 
   const [snackbarOpen, setSnackbarOpen] = useState(false); // Snackbar open state
   const [snackbarMessage, setSnackbarMessage] = useState(""); // Snackbar message
   const [snackbarSeverity, setSnackbarSeverity] = useState("success"); // Snackbar severity
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
 
-    emailjs.sendForm('service_tdb56sl', 'template_chchivs', e.target, '1PqmWfWlxZxVOAS-z')
-      .then((result) => {
-          console.log('Email sent successfully:', result.text);
-          setSnackbarMessage("Email sent successfully!");
-          setSnackbarSeverity("success");
-          setSnackbarOpen(true);
-      }, (error) => {
-          console.log('Failed to send email:', error.text);
-          setSnackbarMessage("Failed to send email. Please try again.");
-          setSnackbarSeverity("error");
-          setSnackbarOpen(true);
-      });
-  };
+  //   emailjs.sendForm('service_tdb56sl', 'template_chchivs', e.target, '1PqmWfWlxZxVOAS-z')
+  //     .then((result) => {
+  //         console.log('Email sent successfully:', result.text);
+  //         setSnackbarMessage("Email sent successfully!");
+  //         setSnackbarSeverity("success");
+  //         setSnackbarOpen(true);
+  //     }, (error) => {
+  //         console.log('Failed to send email:', error.text);
+  //         setSnackbarMessage("Failed to send email. Please try again.");
+  //         setSnackbarSeverity("error");
+  //         setSnackbarOpen(true);
+  //     });
+  // };
 
   const handleSnackbarClose = (event, reason) => {
     if (reason === "clickaway") {

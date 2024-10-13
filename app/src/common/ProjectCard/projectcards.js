@@ -9,7 +9,7 @@ const SkillsCard = ({ image, heading, desc, tech, subheading }) => {
   return (
     <Card
       sx={{
-        width: "31%",
+        // width: "31%",
         maxWidth: 345,
         height: "670px",
         // padding: "10px",
