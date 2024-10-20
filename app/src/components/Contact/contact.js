@@ -110,7 +110,7 @@ export default function Contact() {
   };
 
   const handleGitHubClick = () => {
-    window.open("https://github.com/usama-bin-tahir", "_blank");
+    window.open("https://github.com/usama-malik-312", "_blank");
   };
 
   const handleWhatsAppClick = () => {
