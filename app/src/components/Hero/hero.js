@@ -19,15 +19,17 @@ export default function Hero() {
             <Button className={styles.buttonAbout}>About Me</Button>
           </ScrollLink>
           <Button startIcon={<DownloadIcon />}
-          href="/Usama Bin Tahir.pdf" 
+          href="/Usama_bin_Tahir, Resume.pdf" 
            download="Usama_Bin_Tahir_Resume.pdf"
            className={styles.buttonResume}>Resume</Button>
         </div>
       </div>
       <div className={styles.imageContainer}>
-        <div className={styles.diamond}>
+        <div 
+        className={styles.diamond}
+        >
           <Image
-            src="/usama.JPG" // Update with the actual path to your image
+            src="/u3.jpg" // Update with the actual path to your image
             alt="Hero Image"
             layout="responsive"
             width={500}
