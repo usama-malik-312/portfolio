@@ -1,77 +1,100 @@
 import React from 'react';
-import styles from './skills.module.css'; // Import the CSS module for styling
-import MediaCard from '../../common/SkillCard/skillscard'; // Assuming MediaCard is in the same directory
+import styles from './skills.module.css';
+import MediaCard from '../../common/SkillCard/skillscard';
 import Heading from '../../common/Heading/heading';
 import { Container } from '@mui/material';
+import {
+  SiHtml5,
+  SiCss3,
+  SiJavascript,
+  SiTypescript,
+  SiReact,
+  SiRedux,
+  SiNextdotjs,
+  SiTailwindcss,
+  SiBootstrap,
+  SiMui,
+  SiElementor,
+  SiNodedotjs,
+  SiExpress,
+  SiMysql,
+  SiSequelize,
+  SiMongodb,
+  SiMongoose,
+  SiGraphql,
+  SiWordpress,
+  SiGit,
+  SiGithub,
+  SiHeroku,
+  SiVscodium,
+  SiPostman
+} from 'react-icons/si';
+
+// Create a reusable SkillItem component
+const SkillItem = ({ icon: Icon, color, name }) => (
+  <div style={{ display: 'flex', alignItems: 'center', margin: '5px 0' }}>
+    <Icon style={{ fontSize: '20px', color, marginRight: '8px' }} />
+    <span style={{ fontSize: '14px' }}>{name}</span>
+  </div>
+);
 
 export default function Skills() {
   return (
-    <Container maxWidth="lg" >
-    <div className={styles.skills}>
-      {/* <h2 className={styles.heading}>My Skills</h2> */}
-      <Heading text={"My Skills"} color={"#fff"}></Heading>
+    <Container maxWidth="lg">
+      <div className={styles.skills}>
+        <Heading text={"My Skills"} color={"#fff"}></Heading>
 
-      <div className={styles.cardContainer}>
-        <MediaCard
-          image="/frontend.svg"
-          heading="Front-End"
-          content={
-            <div class="elementor-shortcode">
-              <img decoding="async" style={{marginLeft:"5px"}} alt="HTML5" src="https://raulwebdev.com//wp-content/uploads/2024/03/HTML5.svg" height="20" width="auto"/>
-              <img decoding="async" style={{marginLeft:"5px"}} alt="CSS3" src="https://raulwebdev.com//wp-content/uploads/2024/03/CSS3.svg" height="20" width="auto"/>
-              <img decoding="async" style={{marginLeft:"5px"}} alt="JavaScript" src="https://raulwebdev.com//wp-content/uploads/2024/03/JavaScript.svg" height="20" width="auto"/>
-              <img decoding="async" style={{marginLeft:"5px"}} alt="TypeScript" src="https://raulwebdev.com//wp-content/uploads/2024/03/TypeScript.svg" height="20" width="auto"/>
-              <img decoding="async" style={{marginLeft:"5px"}} alt="React" src="https://raulwebdev.com//wp-content/uploads/2024/03/React.svg" height="20" width="auto"/>
-              <img decoding="async" style={{marginLeft:"5px"}} alt="Redux" src="https://raulwebdev.com//wp-content/uploads/2024/03/Redux.svg" height="20" width="auto"/>
-              <img decoding="async" style={{marginLeft:"5px"}} alt="Next.js" src="https://raulwebdev.com//wp-content/uploads/2024/03/Next.js.svg" height="20" width="auto"/>
-              <img decoding="async" style={{marginLeft:"5px"}} alt="Tailwind CSS" src="https://raulwebdev.com//wp-content/uploads/2024/03/Tailwind20CSS.svg" height="20" width="auto"/>
-              <img decoding="async" style={{marginLeft:"5px"}} alt="Bootstrap" src="https://raulwebdev.com//wp-content/uploads/2024/03/Bootstrap.svg" height="20" width="auto"/>
-              {/* <img decoding="async" style={{marginLeft:"5px"}} alt="jQuery" src="https://raulwebdev.com//wp-content/uploads/2024/03/jQuery-1.svg" height="20" width="auto"/> */}
-              <img decoding="async" style={{marginLeft:"5px"}} alt="Material Design" src="https://raulwebdev.com//wp-content/uploads/2024/03/Material20Design-1.svg" height="20" width="auto"/>
-              <img decoding="async" style={{marginLeft:"5px"}} alt="Elementor" src="https://raulwebdev.com//wp-content/uploads/2024/03/Elementor.svg" height="20" width="auto"/>
+        <div className={styles.cardContainer}>
+          <MediaCard
+            image="/frontend.svg"
+            heading="Front-End"
+            content={
+              <div className={styles.skillList}>
+                <SkillItem icon={SiHtml5} color="#E34F26" name="HTML5" />
+                <SkillItem icon={SiCss3} color="#1572B6" name="CSS3" />
+                <SkillItem icon={SiJavascript} color="#F7DF1E" name="JavaScript" />
+                <SkillItem icon={SiTypescript} color="#3178C6" name="TypeScript" />
+                <SkillItem icon={SiReact} color="#61DAFB" name="React" />
+                <SkillItem icon={SiRedux} color="#764ABC" name="Redux" />
+                <SkillItem icon={SiNextdotjs} color="#000000" name="Next.js" />
+                <SkillItem icon={SiTailwindcss} color="#06B6D4" name="Tailwind CSS" />
+                <SkillItem icon={SiBootstrap} color="#7952B3" name="Bootstrap" />
+                <SkillItem icon={SiMui} color="#0081CB" name="Material UI" />
+                <SkillItem icon={SiElementor} color="#92003B" name="Elementor" />
               </div>
-          }
-        />
-        <MediaCard
-          image="/backend.svg"
-          heading="Back-End"
-          content={<div class="elementor-shortcode">
-            <img decoding="async" style={{marginLeft:"5px"}} alt="Node.js"src="https://raulwebdev.com/wp-content/uploads/2024/03/Node.js.svg" height="20" width="auto"/>
-            <img decoding="async" style={{marginLeft:"5px"}} alt="Express"src="https://raulwebdev.com/wp-content/uploads/2024/03/Express.svg" height="20" width="auto"/>
-            <img decoding="async" style={{marginLeft:"5px"}} alt="MySQL"src="https://raulwebdev.com/wp-content/uploads/2024/03/MySQL.svg" height="20" width="auto"/>
-            <img decoding="async" style={{marginLeft:"5px"}} alt="Sequelize"src="https://raulwebdev.com/wp-content/uploads/2024/03/Sequelize.svg" height="20" width="auto"/>
-            <img decoding="async" style={{marginLeft:"5px"}} alt="MongoDB"src="https://raulwebdev.com/wp-content/uploads/2024/03/MongoDB.svg" height="20" width="auto"/>
-            <img decoding="async" style={{marginLeft:"5px"}} alt="Mongoose"src="https://raulwebdev.com/wp-content/uploads/2024/03/Mongoose.svg" height="20" width="auto"/>
-            <img decoding="async" style={{marginLeft:"5px"}} alt="GraphQL"src="https://raulwebdev.com/wp-content/uploads/2024/03/GraphQL.svg" height="20" width="auto"/>
-            {/* <img decoding="async" style={{marginLeft:"5px"}} alt="Apollo GraphQL"src="https://raulwebdev.com/wp-content/uploads/2024/03/Apollo20GraphQL.svg" height="20" width="auto"/> */}
-            {/* <img decoding="async" style={{marginLeft:"5px"}} alt="Python"src="https://raulwebdev.com/wp-content/uploads/2024/03/Python.svg" height="20" width="auto"/> */}
-            {/* <img decoding="async" style={{marginLeft:"5px"}} alt="Spring Boot"src="https://raulwebdev.com/wp-content/uploads/2024/03/Spring20Boot.svg" height="20" width="auto"/> */}
-            {/* <img decoding="async" style={{marginLeft:"5px"}} alt="Spring Security"src="https://raulwebdev.com/wp-content/uploads/2024/03/Spring20Security.svg" height="20" width="auto"/> */}
-            {/* <img decoding="async" style={{marginLeft:"5px"}} alt="Django"src="https://raulwebdev.com/wp-content/uploads/2024/03/Django.svg" height="20" width="auto"/> */}
-            <img decoding="async" style={{marginLeft:"5px"}} alt="WordPress"src="https://raulwebdev.com/wp-content/uploads/2024/03/WordPress.svg" height="20" width="auto"/>
-            </div>}
-        />
-        <MediaCard
-          image="/tools.svg"
-
-          heading="Tools"
-          content={
-            <div class="elementor-shortcode">
-              <img decoding="async" style={{marginLeft:"5px"}} alt="Git" src="https://raulwebdev.com/wp-content/uploads/2024/03/Git.svg" height="20" width="auto"/>
-              <img decoding="async" style={{marginLeft:"5px"}} alt="GitHub" src="https://raulwebdev.com/wp-content/uploads/2024/03/GitHub.svg" height="20" width="auto"/>
-              <img decoding="async" style={{marginLeft:"5px"}} alt="Heroku" src="https://raulwebdev.com/wp-content/uploads/2024/03/Heroku.svg" height="20" width="auto"/>
-              {/* <img decoding="async" style={{marginLeft:"5px"}} alt="Netlify" src="https://raulwebdev.com/wp-content/uploads/2024/03/Netlify.svg" height="20" width="auto"/> */}
-              <img decoding="async" style={{marginLeft:"5px"}} alt="Visual Studio Code" src="https://raulwebdev.com/wp-content/uploads/2024/03/Visual20Studio20Code.svg" height="20" width="auto"/>
-              <img decoding="async" style={{marginLeft:"5px"}} alt="Postman" src="https://raulwebdev.com/wp-content/uploads/2024/03/Postman.svg" height="20" width="auto"/>
-              {/* <img decoding="async" style={{marginLeft:"5px"}} alt="Webpack" src="https://raulwebdev.com/wp-content/uploads/2024/03/Webpack.svg" height="20" width="auto"/> */}
-              {/* <img decoding="async" style={{marginLeft:"5px"}} alt="Jest" src="https://raulwebdev.com/wp-content/uploads/2024/03/Jest.svg" height="20" width="auto"/> */}
-              {/* <img decoding="async" style={{marginLeft:"5px"}} alt="IntelliJ IDEA" src="https://raulwebdev.com/wp-content/uploads/2024/03/IntelliJ20IDEA.svg" height="20" width="auto"/> */}
-              {/* <img decoding="async" style={{marginLeft:"5px"}} alt="Render" src="https://raulwebdev.com/wp-content/uploads/2024/03/Render.svg" height="20" width="auto"/> */}
+            }
+          />
+          <MediaCard
+            image="/backend.svg"
+            heading="Back-End"
+            content={
+              <div className={styles.skillList}>
+                <SkillItem icon={SiNodedotjs} color="#339933" name="Node.js" />
+                <SkillItem icon={SiExpress} color="#000000" name="Express" />
+                <SkillItem icon={SiMysql} color="#4479A1" name="MySQL" />
+                <SkillItem icon={SiSequelize} color="#52B0E7" name="Sequelize" />
+                <SkillItem icon={SiMongodb} color="#47A248" name="MongoDB" />
+                <SkillItem icon={SiMongoose} color="#880000" name="Mongoose" />
+                <SkillItem icon={SiGraphql} color="#E10098" name="GraphQL" />
+                <SkillItem icon={SiWordpress} color="#21759B" name="WordPress" />
               </div>
-          }
-        />
+            }
+          />
+          <MediaCard
+            image="/tools.svg"
+            heading="Tools"
+            content={
+              <div className={styles.skillList}>
+                <SkillItem icon={SiGit} color="#F05032" name="Git" />
+                <SkillItem icon={SiGithub} color="#181717" name="GitHub" />
+                <SkillItem icon={SiHeroku} color="#430098" name="Heroku" />
+                <SkillItem icon={SiVscodium} color="#007ACC" name="VS Code" />
+                <SkillItem icon={SiPostman} color="#FF6C37" name="Postman" />
+              </div>
+            }
+          />
+        </div>
       </div>
-    </div>
     </Container>
   );
 }

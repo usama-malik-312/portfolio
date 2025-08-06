@@ -11,30 +11,43 @@
   color: #333;
 }
 
+.skillList {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 8px;
+}
+
 .horizontal-line {
   border: 0;
-  border-top: 1px solid #080808; /* Adjust color and thickness as needed */
-  margin: 20px 0; /* Adjust margins as needed */
+  border-top: 1px solid #080808;
+  /* Adjust color and thickness as needed */
+  margin: 20px 0;
+  /* Adjust margins as needed */
 }
 
 .cardContainer {
   /* display: grid; */
-  display:  flex;
+  display: flex;
   flex-flow: wrap;
   gap: 20px;
   justify-content: center;
-  grid-template-columns: repeat(3, 1fr); /* Three columns for larger screens */
+  grid-template-columns: repeat(3, 1fr);
+  /* Three columns for larger screens */
 }
 
 @media (max-width: 1024px) {
   .cardContainer {
-    grid-template-columns: repeat(2, 1fr); /* Two columns for medium screens */
+    grid-template-columns: repeat(2, 1fr);
+    /* Two columns for medium screens */
   }
 }
 
 @media (max-width: 768px) {
   .cardContainer {
-    grid-template-columns: 1fr; /* Single column for smaller screens */
+    grid-template-columns: 1fr;
+    /* Single column for smaller screens */
   }
 }
 
